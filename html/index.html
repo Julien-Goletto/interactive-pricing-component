@@ -3,37 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main id="main">
+    <header class="header">
+      <h1 class="header__catchphrase">Simple, traffic-based pricing</h1>
+      <h2 class="header__description">Sign-up for our 30-day trial. No credit card required.</h2>
+    </header>
+    <article class="container">
+      <div class="container__setting">
+        <div class="setting__pageviews-number">
+          <span class="setting__pageviews-number">100K</span>
+          <span class="setting__pageviews-number">Pageviews</span>
+        </div>
+        <input type="range" min="0" max="32" value="16" name="fee" class="setting__slider">
+        <div class="setting__displayed-fee">
+          <span class="displayed-fee__number">$16.00</span>
+          <span class="displayed-fee__frequency">/ month</span>
+        </div>
+        <div class="setting__frequency">
+          <span class="frequency__monthly">Monthly Billing</span>
+          <label class="frequency__switch">
+            <input name="yearly__subscription" type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <div class="frequency__yearly">
+            <span class="yearly__tag">Yearly Billing</span>
+            <span class="yearly__discount">-25%</span>
+          </div>
+        </div>
+      </div>
+      <div class="container__subscribe">
+        <ul class="subscribe__servcies">
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+          <button type="button" name="trial-start" value="Start my trial" class="subscribe__button"></button>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <script type="text/javascript" src="../js/app.js" ></script>
 </body>
 </html>
+
