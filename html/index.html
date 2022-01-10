@@ -16,19 +16,19 @@
     </header>
     <article class="container">
       <div class="container__setting">
-        <div class="setting__pageviews-number">
-          <span class="setting__pageviews-number">100K</span>
+        <div class="setting__pageviews">
+          <span class="setting__pageviews-number"></span>
           <span class="setting__pageviews-number">Pageviews</span>
         </div>
-        <input type="range" min="0" max="32" value="16" name="fee" class="setting__slider">
+        <input type="range" min="5" max="50"  step="5" name="fee" class="setting__slider" id="setting__slider">
         <div class="setting__displayed-fee">
-          <span class="displayed-fee__number">$16.00</span>
+          <span class="displayed-fee__number"></span>
           <span class="displayed-fee__frequency">/ month</span>
         </div>
         <div class="setting__frequency">
           <span class="frequency__monthly">Monthly Billing</span>
           <label class="frequency__switch">
-            <input name="yearly__subscription" type="checkbox">
+            <input name="yearly__subscription" type="checkbox" id="frequency__slider">
             <span class="slider"></span>
           </label>
           <div class="frequency__yearly">
@@ -38,12 +38,12 @@
         </div>
       </div>
       <div class="container__subscribe">
-        <ul class="subscribe__servcies">
+        <ul class="subscribe__services">
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
           <li>Email reports</li>
-          <button type="button" name="trial-start" value="Start my trial" class="subscribe__button"></button>
         </ul>
+        <button type="button" name="trial-start" value="Start my trial" class="subscribe__button">Start my trial</button>
       </div>
     </article>
   </main>
